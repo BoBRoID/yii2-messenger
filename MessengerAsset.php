@@ -8,6 +8,26 @@
 
 namespace bobroid\messenger;
 
-class MessengerAsset extends yii\web\AssetBundle{
+use yii\web\AssetBundle;
 
+class MessengerAsset extends AssetBundle{
+
+    public $sourcePath = '@vendor/bobroid/yii2-messenger/assets';
+
+    public $publishOptions = [
+        'forceCopy' => true
+    ];
+
+    public $css = [
+        'css/messenger.css',
+    ];
+
+    public $js = [
+        'js/messenger.min.js',
+    ];
+
+    public $depends = [
+        'yii\web\YiiAsset',
+        'yii\web\JqueryAsset'
+    ];
 }
