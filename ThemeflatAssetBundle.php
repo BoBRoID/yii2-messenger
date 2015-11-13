@@ -2,32 +2,31 @@
 /**
  * Created by PhpStorm.
  * User: bobroid
- * Date: 11.11.15
- * Time: 13:16
+ * Date: 13.11.15
+ * Time: 14:35
  */
 
 namespace bobroid\messenger;
 
+
 use yii\web\AssetBundle;
 
-class MessengerAsset extends AssetBundle{
+class ThemeflatAssetBundle extends AssetBundle{
 
     public $sourcePath = '@vendor/bobroid/yii2-messenger/assets';
 
-    public $publishOptions = [
-        'forceCopy' => true
-    ];
-
     public $css = [
-        'css/messenger.css',
+        'css/messenger-theme-flat.css',
     ];
 
     public $js = [
-        'js/messenger.min.js',
+        'js/messenger-theme-flat.js'
     ];
 
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\web\JqueryAsset'
+        'yii\web\JqueryAsset',
+        'bobroid\messenger\MessengerAsset'
     ];
+
 }
