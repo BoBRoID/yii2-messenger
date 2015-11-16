@@ -8,8 +8,10 @@
 
 namespace bobroid\messenger;
 
+use yii\web\AssetBundle;
 
-class ThemeairAssetBundle {
+
+class ThemeairAssetBundle extends AssetBundle{
 
     public $sourcePath = '@vendor/bobroid/yii2-messenger/assets';
 
